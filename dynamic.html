@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>dynamic functions</title>
+	 <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.js"
+  integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
+  crossorigin="anonymous"></script>
+	<style type="text/css">
+		body h3{
+         text-align: center;
+         color: black;
+		}
+		body{
+       
+                  background-color: #03a9f4;
+		}
+	</style>
+</head>
+<body>
+<h3>Here i create Html elements dynamically</h3>
+<label>Name</label> <input type="text" id="dabba1" placeholder="Please enter name">
+<label>Marks</label><input type="text" name="dabba2" placeholder="please enter marks">
+
+
+<td><button onclick="elementadd()">Add Element</button></td>
+<td><button onclick="createText()"> CreateText</button></td>
+<td><button onclick="createTable()">CreateTable</button></td>
+
+<table border="1" width="50%" id="myTab">
+<tr>
+   <td>venkat</td>
+   <td>45</td>
+</tr>
+<tr>
+    <td>lokesh</td>
+    <td>49</td>
+ </tr>
+ </table>  
+ <button onclick="addRows()"> addrows</button> 
+ <button onclick="delrow()"> delrows</button> 
+
+
+
+<script>
+function createText()
+{
+	 var myTable = document.createElement('table');
+	 var row = document.createElement('tr');
+	 var colomn1 = document.createElement('td');
+	 colomn1.innerHTML = "venkat";
+	 var colomn2 = document.createElement('td'); 
+	 colomn2.innerHTML = 85;
+	 myTable.appendChild(row);
+	 row.appendChild(colomn1);
+	 row.appendChild(colomn2);
+	 document.getElementsByTagName('body')[0].appendChild(myTable);
+}	
+
+
+function createTable()
+{
+	 var myTable = document.getElementById('myTab');
+	 for(var i=0; i<10;i++){
+	 var row = myTable.insertRow(0);
+	 var column1 = row.insertCell(0);
+	 var column2 = row.insertCell(1); 
+	 column1.innerHTML = "Names";
+	 column2.innerHTML = "Marks";
+
+}
+}
+
+function addRows()
+{
+  var students = [
+                  {"name":"many","marks":55},
+                  {"name":"many","marks":55},
+                  {"name":"many","marks":55}
+                  ]
+  var myTable = document.getElementById("myTab");
+  for(var i=0;i<students.length;i++)
+  {
+     var row = myTable.insertRow(0);
+	 var column1 = row.insertCell(0);
+	 var column2 = row.insertCell(1); 
+	 column1.innerHTML = students[i].name;
+	 column2.innerHTML = students[i].marks;
+  }
+}
+
+
+ function delrow()
+
+{
+	var myTable = document.getElementById('myTab');
+	myTable.deleteRow(0);
+  }
+
+  function elementadd()
+  {
+  	 var myTable = document.createElementById('myTab')
+  	 myTable
+
+  }
+
+
+</script>
+</body>
+
+</html>

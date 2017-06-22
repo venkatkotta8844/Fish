@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>javascript first assignment</title>
+</head>
+<style>
+	body{
+		background-color: powderblue;
+	}
+	script{
+		align-items: center;
+	}
+</style>
+<body >
+<table>
+<tr>
+<td>First Number:</td><td><input type="text" name="firstnumber" placeholder="Firstnumber"></td>
+<br/>
+</tr>
+<tr>
+<td>Last Number:</td><td><input type="text" id="lastnumber" placeholder="Lastnumber"></td>
+</tr>
+<br/>
+<tr>
+<td>Mobile:</td><td><input type="text" id="phonenumber" Placeholder="+0123456789"></td>
+<br/>
+</tr>
+<td><input type="Submit" onclick="chech_info()">
+       <input type="Reset">  </td>
+       </tr> 
+       </table>
+<script>
+
+ function chech_info(){
+  alert("Hiiii");
+  var firstnumber1 = document.getElementById('firstnumber').value
+  alert("Hello");
+    var lastnumber1 = document.getElementById('lastnumber').value;
+
+  
+
+  if(firstnumber1 =="" || lastnumber1 =="")
+  {
+    alert('please fillup the First and Last name');
+  }
+  
+ }
+  
+
+</script>
+
+<br />
+
+</body>
+</html>
