@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans");
+@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light');
+
+
+
+
+body {
+    background-color: aqua;
+}
+h1{
+    font-size: 75px
+    float:left;
+    font-family: 'Shadows Into Light', cursive;
+}
+.navigation ul{
+    text-align: right;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#ffff li {
+    
+    display:inline-flex;
+    padding: 8px;
+    background-color: #dddddd;
+}
+
+
+ 
+.navigation h1{
+         color: blue; 
+        letter-spacing: 1.2px; 
+        font-family: cursive;
+        float:right
+         }
+.navigation{
+        color: black;
+        letter-spacing: 1.2px;
+        font-family: cursive;
+         }
+
+img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 320px;
+    height: 300px;
+    margin-top: 1cm;
+}
+
+
+img:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+#pori{
+    width:300px;
+}
+h2{
+    font-family: sans-serif;
+    text-align: center;
+    font-size:45px;
+    font-weight: 400;
+    color:blueviolet;
+}
+p{
+    font-family:'Josefin Sans', sans-serif;
+    font-size: 25px;
+    font-weight: 200;
+    color: black;
+    
+}
+
+#lll ol{
+      text-align: center;
+         }
+#facebook {
+    width:50px;
+    height: 30px;
+}
+#flav{
+    width: 100px;
+    height: 75px;
+}
+
+/*#one,#two,#three{
+ 
+        width:250px;
+    height:10px;
+    float: left;
+    position: relative;
+    font-size:20px;
+    padding-left: 100px;
+    
+}*/
